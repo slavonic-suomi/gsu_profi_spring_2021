@@ -1,4 +1,4 @@
-package com.company;
+package by.gsu;
 
 public class MultiDimentionalArraysMain {
     public static void main(String[] args) {

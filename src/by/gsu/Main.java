@@ -1,4 +1,4 @@
-package com.company;
+package by.gsu;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -6,21 +6,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        int a = 19;
-        int b = 100;
+        double a = 19;
+        double b = 100;
+        double u = 13;
 
         int x = new Scanner(System.in).nextInt();
         System.out.println(x);
         double result;
-
         if (x < a) {
-            result = Math.sin(x);
+            result = Math.log(x + u / (5 * x));
         } else if (x >= a && x <= b) {
-            result = Math.sqrt(x);
-        } else {
-            result = Math.pow(x, 3);
+            result = Math.pow(3, -4);
+        } else  {
+            result = Math.tan(Math.PI * (x + u));
         }
-
         System.out.println(result);
 
     }

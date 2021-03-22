@@ -1,4 +1,4 @@
-package com.company;
+package by.gsu;
 
 import java.util.Arrays;
 

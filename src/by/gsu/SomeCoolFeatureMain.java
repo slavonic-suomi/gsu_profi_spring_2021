@@ -1,4 +1,4 @@
-package com.company;
+package by.gsu;
 
 public class SomeCoolFeatureMain {
     public static void main(String[] args) {
