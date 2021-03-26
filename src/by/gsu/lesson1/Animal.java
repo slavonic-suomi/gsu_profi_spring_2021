@@ -1,13 +1,23 @@
 package by.gsu.lesson1;
 
-public class Animal {
-    String color;
+public abstract class Animal {
+    protected String color;
     int age;
     int type;
 
-    void song() {
-
+    public String getColor() {
+        return color;
     }
+
+    public void setColor(String anotherColor) {
+        color = anotherColor;
+    }
+
+    void doVoice() {
+        System.out.println("abstract animal nooooo");
+    }
+
+    public abstract void jump();
 
     int getWeight() {
         int result = 42;

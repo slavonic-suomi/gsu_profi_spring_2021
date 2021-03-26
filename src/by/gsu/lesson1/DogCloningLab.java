@@ -4,12 +4,12 @@ public class DogCloningLab {
     public static void main(String[] args) {
         Dog originalDog = new Dog();
         originalDog.age = 13;
-        originalDog.color = "BLACK";
-        originalDog.huntedCats = 5;
+        originalDog.setColor("BLACK");
+        originalDog.setHuntedCats(5);
 
         Dog clonedDog = originalDog.cloneDog();
         System.out.println(clonedDog.age);
-        System.out.println(clonedDog.color);
-        System.out.println(clonedDog.huntedCats);
+        System.out.println(clonedDog.getColor());
+        System.out.println(clonedDog.getHuntedCats());
     }
 }
