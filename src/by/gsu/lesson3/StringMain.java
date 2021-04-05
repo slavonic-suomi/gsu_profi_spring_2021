@@ -1,22 +1,14 @@
 package by.gsu.lesson3;
 
-import java.util.Arrays;
-
-//UTF-16LE
 public class StringMain {
     public static void main(String[] args) {
-        String[] arr = {"asd", "zzz", "qwe"};
+        String s1 = "asd";
+        String s2 = new String("asd");
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
-                if (arr[j].compareTo(arr[j + 1]) > 0) {
-                    String temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
+        int x1 = 1, x2 = 1;
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
+//        System.out.println(x1 == x2);
     }
 }

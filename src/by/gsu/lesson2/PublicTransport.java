@@ -28,4 +28,24 @@ public class PublicTransport extends Transport {
     public void setTicketCost(int ticketCost) {
         this.ticketCost = ticketCost;
     }
+
+    @Override
+    public boolean equals(Object another) {
+        if (this == another) {
+            return true;
+        }
+
+        if (!super.equals(another)) {
+            return false;
+        }
+
+        if (another instanceof PublicTransport) {
+            PublicTransport pk = (PublicTransport) another;
+            if (this.ticketCost == pk.ticketCost && this.vinNumber.equals(pk.vinNumber)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

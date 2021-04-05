@@ -1,7 +1,29 @@
 package by.gsu.lesson2;
 
+import java.util.Objects;
+
 public class Transport {
     private String number;
+
+    @Override
+    public boolean equals(Object another) {
+        if (this == another) {
+            return true;
+        }
+        if (another instanceof Transport) {
+            Transport anotherTransport = (Transport) another;
+            if (this.number.equals(anotherTransport.number)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(number);
+    }
 
     public Transport() {
         this("EMPTY");
@@ -25,4 +47,6 @@ public class Transport {
     protected void finalize() throws Throwable {
         System.out.println("deleting transport!");
     }
+
+
 }
