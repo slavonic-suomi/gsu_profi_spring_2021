@@ -1,4 +1,4 @@
-package by.gsu;
+package by.gsu.lesson0;
 
 import java.util.Arrays;
 
@@ -52,8 +52,6 @@ public class ArrayMain {
         for (int i: intArray) {
             System.out.println(i);
         }
-
-
 
     }
 }

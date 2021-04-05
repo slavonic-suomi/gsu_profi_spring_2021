@@ -1,4 +1,4 @@
-package by.gsu;
+package by.gsu.lesson0;
 
 public class DivisionMain {
     public static void main(String[] args) {

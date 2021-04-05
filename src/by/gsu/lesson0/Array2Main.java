@@ -1,4 +1,4 @@
-package by.gsu;
+package by.gsu.lesson0;
 
 import java.util.Arrays;
 

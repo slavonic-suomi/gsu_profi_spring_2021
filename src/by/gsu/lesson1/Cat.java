@@ -3,6 +3,10 @@ package by.gsu.lesson1;
 public class Cat extends Animal {
     private int huntedMice;
 
+    public Cat() {
+        System.out.println("i'm cat!");
+    }
+
     public int getHuntedMice() {
         return huntedMice;
     }

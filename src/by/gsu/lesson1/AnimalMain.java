@@ -3,7 +3,7 @@ package by.gsu.lesson1;
 public class AnimalMain {
     public static void main(String[] args) {
         Animal a1 = new Cat();
-        Animal a2 = new Dog();
+        Animal a2 = new Cat();
         Animal a3 = new Dog();
 
         Animal[] array = new Animal[3];

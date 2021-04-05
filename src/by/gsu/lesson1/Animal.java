@@ -9,8 +9,8 @@ public abstract class Animal {
         return color;
     }
 
-    public void setColor(String anotherColor) {
-        color = anotherColor;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     void doVoice() {
