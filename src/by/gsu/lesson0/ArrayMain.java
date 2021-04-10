@@ -1,7 +1,5 @@
 package by.gsu.lesson0;
 
-import java.util.Arrays;
-
 public class ArrayMain {
 
     public static void main(String[] args) {

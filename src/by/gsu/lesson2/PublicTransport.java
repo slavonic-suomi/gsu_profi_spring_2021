@@ -3,10 +3,12 @@ package by.gsu.lesson2;
 public class PublicTransport extends Transport {
     private int ticketCost;
     private final String vinNumber;
+    public static int publicTransportCounter;
 
     public PublicTransport(String vinNumber) {
         this.vinNumber = vinNumber;
         System.out.println("PublicTransport constructor");
+        publicTransportCounter++;
     }
 
     public PublicTransport(String vinNumber, int ticketCost, String number) {
@@ -47,5 +49,11 @@ public class PublicTransport extends Transport {
         }
 
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "PublicTransport (vinNumber=" +
+                vinNumber + ", ticketCost=" + ticketCost + ", " + super.toString() + ")";
     }
 }
