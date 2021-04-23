@@ -11,9 +11,9 @@ public class CalculatorMain {
             System.out.println("division: " + result);
         } catch (Throwable e) {
             System.out.println("there was an exception!");
+        } finally {
+            System.out.println("finally!");
         }
-
-
         System.out.println("it's ok, we are here");
     }
 }

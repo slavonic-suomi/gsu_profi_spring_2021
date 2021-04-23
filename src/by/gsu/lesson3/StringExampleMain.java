@@ -19,6 +19,10 @@ public class StringExampleMain {
         System.out.println( "asd123ertaSDd".replaceAll("[a-zA-Z]", "") );
         System.out.println( "asd123ertaSDd".replaceAll("[a-zA-Z]{4}", "") );
 
+        String input = "input";
+        StringBuilder sb = new StringBuilder(input);
+//        sb.append(input);
+
 
     }
 }
