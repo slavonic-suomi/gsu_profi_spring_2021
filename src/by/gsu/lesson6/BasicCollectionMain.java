@@ -1,7 +1,6 @@
 package by.gsu.lesson6;
 
 import by.gsu.lesson6.unimplemented.DualLinkedStringCollection;
-import by.gsu.lesson6.unimplemented.LinkedStringCollection;
 
 public class BasicCollectionMain {
     public static void main(String[] args) {
